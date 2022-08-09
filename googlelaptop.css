@@ -14,6 +14,11 @@
   left: 88.5vw;
   opacity: 0.6;
 }
+.bars {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
 .userbtn {
   height: 36px;
   width: 95px;
@@ -254,4 +259,31 @@
 }
 .settings:hover {
   text-decoration: underline;
+}
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+  .headersection {
+    height: 40px;
+    width: 100vw;
+  }
+  .headersection .userbtn {
+    height: 32px;
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 102.5vw;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    color: #f8f9fa;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  .headersection .bars {
+    visibility: visible;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+  }
 }
